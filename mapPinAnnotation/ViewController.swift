@@ -12,13 +12,11 @@ import MapKit
 class ViewController: UIViewController, MKMapViewDelegate {
     
     var names:[String]!
-    var images:[UIImage]=[]
+    var images:[UIImage]!=[]
     var descriptions:[String]!
     var coordinates:[Any]!
     var currentRestaurantIndex: Int = 0
     var locationManager: CLLocationManager!
-    
-    var restaurantImages =  ["restaurant-1.jpeg", "restaurant-2.jpeg","restaurant-3.jpeg", "restaurant-4.jpeg","restaurant-5.jpeg", "restaurant-6.jpeg","restaurant-7.jpeg","restaurant-8.jpeg"]
     
     @IBOutlet weak var mapView: MKMapView!
     @IBAction func showNext(_ sender: Any) {
@@ -88,16 +86,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
     // Some restaurants in London
     names = ["Pied a Terre", "Big Ben", "Hawksmoor Seven Dials", "Enoteca Turi", "Wiltons", "Scott's", "The Laughing Gravy", "Restaurant Gordon Ramsay"]
     
-    // Restaurants' images to show in the pin callout
-        images = [
-            UIImage(named: "restaurant-1.jpeg")!,
-            UIImage(named: "restaurant-2.jpeg")!,
-            UIImage(named: "restaurant-3.jpeg")!,
-            UIImage(named: "restaurant-4.jpeg")!,
-            UIImage(named: "restaurant-5.jpeg")!,
-            UIImage(named: "restaurant-6.jpeg")!,
-            UIImage(named: "restaurant-7.jpeg")!,
-            UIImage(named: "restaurant-8.jpeg")!
+        // Restaurants' images to show in the pin callout
+        images =
+            [UIImage(named: "restaurant-1.jpeg")!,
+             UIImage(named: "restaurant-2.jpeg")!,
+             UIImage(named: "restaurant-3.jpeg")!,
+             UIImage(named: "restaurant-4.jpeg")!,
+             UIImage(named: "restaurant-5.jpeg")!,
+             UIImage(named: "restaurant-6.jpeg")!,
+             UIImage(named: "restaurant-7.jpeg")!,
+             UIImage(named: "restaurant-8.jpeg")!
         ]
         
     // Latitudes, Longitudes
